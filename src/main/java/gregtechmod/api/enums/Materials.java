@@ -541,8 +541,6 @@ public enum Materials {
 	@Deprecated Peridot				(Olivine, true),
 	@Deprecated Phosphorite			(Phosphorus, true),
 	@Deprecated Quarried			(Marble, false),
-	@Deprecated Quicksilver			(Mercury, true),
-	@Deprecated QuickSilver			(Mercury, false),
 	@Deprecated RedRock				(Redrock, false),
 	@Deprecated RefinedIron			(Iron, false),
 	@Deprecated RedGranite			(GraniteRed, false),
