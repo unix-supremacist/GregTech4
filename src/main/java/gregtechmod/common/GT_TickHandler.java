@@ -61,8 +61,6 @@ public class GT_TickHandler {
             ++Materials.Glowstone.mRGBa[1];
             ++Materials.Sunnarium.mRGBa[0];
             ++Materials.Sunnarium.mRGBa[1];
-            ++Materials.Pyrotheum.mRGBa[0];
-            ++Materials.Pyrotheum.mRGBa[1];
             ++Materials.Enderium.mRGBa[0];
             ++Materials.Enderium.mRGBa[1];
             ++Materials.Enderium.mRGBa[2];
@@ -90,8 +88,6 @@ public class GT_TickHandler {
             --Materials.Glowstone.mRGBa[1];
             --Materials.Sunnarium.mRGBa[0];
             --Materials.Sunnarium.mRGBa[1];
-            --Materials.Pyrotheum.mRGBa[0];
-            --Materials.Pyrotheum.mRGBa[1];
             --Materials.Enderium.mRGBa[0];
             --Materials.Enderium.mRGBa[1];
             --Materials.Enderium.mRGBa[2];
