@@ -354,7 +354,7 @@ public enum Materials {
 	Clay				( 805, GT_ItemTextures.SET_DULL				, 1                                     , 255, 255, 255,   0,	0,    0,       0,          0,          0,          0,    false, false, 3,   1,   1,   Dyes.dyeLightBlue	, 1, Arrays.asList(new MaterialStack(Sodium, 2), new MaterialStack(Lithium, 1), new MaterialStack(Aluminium, 2), new MaterialStack(Silicon, 2))),
 	Coal				( 535, GT_ItemTextures.SET_ROUGH			, 1  |4|8	                            ,  70,  70,  70,   0,	0,    0,       0,          0,          0,          0,    false, false, 2,   2,   1,   Dyes.dyeBlack		, 1, Arrays.asList(new MaterialStack(Carbon, 1))),
 	Cobaltite			( 827, GT_ItemTextures.SET_METALLIC			, 1    |8                               ,  80,  80, 250,   0,	0,    0,       0,          0,          0,          0,    false, false, 3,   1,   1,   Dyes.dyeBlue		, 1, Arrays.asList(new MaterialStack(Cobalt, 1), new MaterialStack(Arsenic, 1), new MaterialStack(Sulfur, 1))),
-	Cooperite			( 828, GT_ItemTextures.SET_METALLIC			, 1    |8                               , 255, 255, 200,   0,	0,    0,       0,          0,          0,          0,    false, false, 5,   1,   1,   Dyes.dyeYellow	, 2, Arrays.asList(new MaterialStack(Platinum, 3), new MaterialStack(Nickel, 1), new MaterialStack(Sulfur, 1), new MaterialStack(Palladium, 1))),
+	Cooperite			( 828, GT_ItemTextures.SET_METALLIC			, 1|2  |8      |64|128			        , 255, 255, 200,   0,	0,    0,       0,          0,          0,          0,    false, false, 5,   1,   1,   Dyes.dyeYellow	, 2, Arrays.asList(new MaterialStack(Iridium, 3), new MaterialStack(Nickel, 1), new MaterialStack(Sulfur, 1), new MaterialStack(Palladium, 1))),
 	Cupronickel			( 310, GT_ItemTextures.SET_METALLIC			, 1|2          |64                      , 227, 150, 128,   0,	0,    0,       0,          0,          0,          0,    false, false, 1,   1,   1,   Dyes.dyeOrange	, 2, Arrays.asList(new MaterialStack(Copper, 1), new MaterialStack(Nickel, 1))),
 	DarkAsh				( 816, GT_ItemTextures.SET_DULL				, 1                                     ,  50,  50,  50,   0,	0,    0,       0,          0,          0,          0,    false, false, 1,   2,   1,   Dyes.dyeGray		, 1, Arrays.asList(new MaterialStack(Carbon, 1))),
 	DeepIron			( 829, GT_ItemTextures.SET_METALLIC			, 1|2  |8      |64                      , 150, 140, 140,   0,	0,    0,       0,          0,          0,          0,    false, false, 3,   1,   1,   Dyes.dyePink		, 2, Arrays.asList(new MaterialStack(Iron, 1))),
@@ -544,7 +544,6 @@ public enum Materials {
 	@Deprecated RedRock				(Redrock, false),
 	@Deprecated RefinedIron			(Iron, false),
 	@Deprecated RedGranite			(GraniteRed, false),
-	@Deprecated Sheldonite			(Cooperite, false),
 	@Deprecated Soulsand			(SoulSand, false),
 	@Deprecated SilverLead			(Galena, false),
 	@Deprecated Titan				(Titanium, false),
@@ -680,7 +679,7 @@ public enum Materials {
 		Garnierite		.setDirectSmelting(Nickel		);
 		Cobaltite		.setDirectSmelting(Cobalt		);
 		Stibnite		.setDirectSmelting(Antimony		);
-		Cooperite		.setDirectSmelting(Platinum		);
+		Cooperite		.setDirectSmelting(Cooperite	);
 		Pyrolusite		.setDirectSmelting(Manganese	);
 		Magnesite		.setDirectSmelting(Magnesium	);
 		Molybdenite		.setDirectSmelting(Molybdenum	);
@@ -733,7 +732,7 @@ public enum Materials {
 		Manganese		.addOreByProduct(Chrome			).addOreByProduct(Iron				);
 		Sapphire		.addOreByProduct(Aluminium		).addOreByProduct(GreenSapphire		);
 		GreenSapphire	.addOreByProduct(Aluminium		).addOreByProduct(Sapphire			);
-		Platinum		.addOreByProduct(Nickel			).addOreByProduct(Iridium			);
+		Platinum		.addOreByProduct(Nickel			);
 		Emerald			.addOreByProduct(Beryllium		).addOreByProduct(Aluminium			);
 		Olivine			.addOreByProduct(Pyrope			).addOreByProduct(Magnesium			);
 		Chrome			.addOreByProduct(Iron			).addOreByProduct(Magnesium			);
@@ -752,7 +751,7 @@ public enum Materials {
 		Spodumene		.addOreByProduct(Aluminium		).addOreByProduct(Lithium			);
 		Ruby			.addOreByProduct(Chrome			).addOreByProduct(GarnetRed			);
 		Phosphorus		.addOreByProduct(Apatite		).addOreByProduct(Phosphate			);
-		Iridium			.addOreByProduct(Platinum		).addOreByProduct(Osmium			);
+		Iridium			.addOreByProduct(Cooperite		).addOreByProduct(Osmium			);
 		Pyrope			.addOreByProduct(GarnetRed		).addOreByProduct(Magnesium			);
 		Almandine		.addOreByProduct(GarnetRed		).addOreByProduct(Aluminium			);
 		Spessartine		.addOreByProduct(GarnetRed		).addOreByProduct(Manganese			);

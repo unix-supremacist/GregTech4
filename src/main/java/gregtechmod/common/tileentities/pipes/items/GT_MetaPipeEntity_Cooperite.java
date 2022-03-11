@@ -4,31 +4,31 @@ import gregtechmod.api.interfaces.IGregTechTileEntity;
 import gregtechmod.api.interfaces.IMetaTileEntity;
 import gregtechmod.api.metatileentity.implementations.GT_MetaPipeEntity_Item;
 
-public class GT_MetaPipeEntity_Platinum_Large extends GT_MetaPipeEntity_Item {
+public class GT_MetaPipeEntity_Cooperite extends GT_MetaPipeEntity_Item {
 
-   public GT_MetaPipeEntity_Platinum_Large(int aID, String aName) {
+   public GT_MetaPipeEntity_Cooperite(int aID, String aName) {
       super(aID, aName);
    }
 
-   public GT_MetaPipeEntity_Platinum_Large() {}
+   public GT_MetaPipeEntity_Cooperite() {}
 
    public IMetaTileEntity newMetaEntity(IGregTechTileEntity aTileEntity) {
-      return new GT_MetaPipeEntity_Platinum_Large();
+      return new GT_MetaPipeEntity_Cooperite();
    }
 
    public int getTextureIndex(byte aSide, byte aConnections, boolean aConnected, boolean aRedstone) {
-      return aConnected?386:384;
+      return aConnected?385:384;
    }
 
    public float getThickNess() {
-      return 0.75F;
+      return 0.5F;
    }
 
    public int getPipeCapacity() {
-      return 8;
+      return 4;
    }
 
    public int getStepSize() {
-      return 4096;
+      return 8192;
    }
 }

@@ -46,7 +46,7 @@ public class GT_BlockMetaID_Block2 extends Block {
         	GregTech_API.registerCover(GT_OreDictUnificator.getOres("plateZinc")			, mIcons[ 2]);
         	GregTech_API.registerCover(GT_OreDictUnificator.getOres("plateOlivine")			, mIcons[ 3]);
         	GregTech_API.registerCover(GT_OreDictUnificator.getOres("plateGreenSapphire")	, mIcons[ 4]);
-        	GregTech_API.registerCover(GT_OreDictUnificator.getOres("platePlatinum")		, mIcons[ 5]);
+			GregTech_API.registerCover(GT_OreDictUnificator.getOres("plateCooperite")		, mIcons[ 5]);
         	GregTech_API.registerCover(GT_OreDictUnificator.getOres("plateTungsten")		, mIcons[ 6]);
         	GregTech_API.registerCover(GT_OreDictUnificator.getOres("plateNickel")			, mIcons[ 7]);
         	GregTech_API.registerCover(GT_OreDictUnificator.getOres("plateTungstenSteel")	, mIcons[ 8]);
@@ -57,6 +57,8 @@ public class GT_BlockMetaID_Block2 extends Block {
         	GregTech_API.registerCover(GT_OreDictUnificator.getOres("plateDenseBronze")		, mIcons[13]);
         	GregTech_API.registerCover(GT_OreDictUnificator.getOres("plateGarnetYellow")	, mIcons[14]);
         	GregTech_API.registerCover(GT_OreDictUnificator.getOres("plateGarnetRed")		, mIcons[15]);
+			GregTech_API.registerCover(GT_OreDictUnificator.getOres("platePlatinum")		, mIcons[16]);
+
     	}
 	}
 	

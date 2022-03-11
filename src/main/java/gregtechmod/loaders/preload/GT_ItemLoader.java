@@ -72,7 +72,7 @@ public class GT_ItemLoader implements Runnable {
         GT_Items.Credit_Copper.set(		GT_MetaItem_Material.addItem( 0, null	, "item.copper_credit.tooltip", false));
         GT_Items.Credit_Silver.set(		GT_MetaItem_Material.addItem( 1, null	, "item.silver_credit.tooltip", false));
         GT_Items.Credit_Gold.set(		GT_MetaItem_Material.addItem( 2, null	, "item.gold_credit.tooltip", false));
-        GT_Items.Credit_Platinum.set(	GT_MetaItem_Material.addItem( 3, null	, "item.platinum_credit.tooltip", false));
+        GT_Items.Credit_Cooperite.set(	GT_MetaItem_Material.addItem( 3, null	, "item.cooperite_credit.tooltip", false));
         GT_Items.Credit_Osmium.set(		GT_MetaItem_Material.addItem(12, null	, "item.osmium_credit.tooltip", false));
 		GT_MetaItem_Material.addItem(  4, null					, null, false); // Idirium allot
 		GT_MetaItem_Material.addItem(  9, OrePrefixes.dye		, "Blue"					, false);
@@ -188,7 +188,7 @@ public class GT_ItemLoader implements Runnable {
 		GT_Items.Credit_Greg_Cupronickel.set(		tMetaGenerated.addItem(  1, "credit_bronze"			, "item.GregTech_MetaGenerated_Item_01.credit_bronze.tooltip"	, null));
 		GT_Items.Credit_Greg_Silver.set(			tMetaGenerated.addItem(  2,"credit_silver"			, "item.GregTech_MetaGenerated_Item_01.credit_silver.tooltip"	, null));
 		GT_Items.Credit_Greg_Gold.set(				tMetaGenerated.addItem(  3, "credit_gold"			, "item.GregTech_MetaGenerated_Item_01.credit_gold.tooltip"		, null));
-		GT_Items.Credit_Greg_Platinum.set(			tMetaGenerated.addItem(  4, "credit_diamond"		, "item.GregTech_MetaGenerated_Item_01.credit_diamond.tooltip"	, null));
+		GT_Items.Credit_Greg_Cooperite.set(			tMetaGenerated.addItem(  4, "credit_diamond"		, "item.GregTech_MetaGenerated_Item_01.credit_diamond.tooltip"	, null));
 		GT_Items.Credit_Greg_Osmium.set(			tMetaGenerated.addItem(  5, "credit_osmium"			, "item.GregTech_MetaGenerated_Item_01.credit_osmium.tooltip"	, null));
 		GT_Items.Credit_Greg_Naquadah.set(			tMetaGenerated.addItem(  6, "credit_naquadah"		, "item.GregTech_MetaGenerated_Item_01.credit_naquadah.tooltip"	, null));
 		GT_Items.Credit_Greg_Neutronium.set(		tMetaGenerated.addItem(  7, "credit_iridium"		, "item.GregTech_MetaGenerated_Item_01.credit_iridium.tooltip"	, null));

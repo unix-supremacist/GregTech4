@@ -383,7 +383,7 @@ public class GT_BookAndLootLoader implements Runnable {
         ChestGenHooks.addItem(ChestGenHooks.DUNGEON_CHEST			, new WeightedRandomChestContent(GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Chrome		, 1), 1, 3,  40));
         
         ChestGenHooks.addItem(ChestGenHooks.PYRAMID_DESERT_CHEST	, new WeightedRandomChestContent(GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.Silver		, 1), 4,16,  12));
-        ChestGenHooks.addItem(ChestGenHooks.PYRAMID_DESERT_CHEST	, new WeightedRandomChestContent(GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.Platinum		, 1), 2, 8,   4));
+        ChestGenHooks.addItem(ChestGenHooks.PYRAMID_DESERT_CHEST	, new WeightedRandomChestContent(GT_OreDictUnificator.get(OrePrefixes.ingot, Materials.Cooperite	, 1), 2, 8,   4));
         ChestGenHooks.addItem(ChestGenHooks.PYRAMID_DESERT_CHEST	, new WeightedRandomChestContent(GT_OreDictUnificator.get(OrePrefixes.gem, Materials.Ruby			, 1), 2, 8,   2));
         ChestGenHooks.addItem(ChestGenHooks.PYRAMID_DESERT_CHEST	, new WeightedRandomChestContent(GT_OreDictUnificator.get(OrePrefixes.gem, Materials.Sapphire		, 1), 2, 8,   2));
         ChestGenHooks.addItem(ChestGenHooks.PYRAMID_DESERT_CHEST	, new WeightedRandomChestContent(GT_OreDictUnificator.get(OrePrefixes.gem, Materials.GreenSapphire	, 1), 2, 8,   2));

@@ -915,7 +915,7 @@ public class GT_ComputercubeDescription {/*
 			    		"an Achievement.",
 			    		"",
 			    		"However Iridium Ore contains traces",
-			    		"of Platinum, so it's best to use the",
+			    		"of Cooperite, so it's best to use the",
 			    		"Industrial Grinder for this Ore.",
 			    		"",
 			    		"",
