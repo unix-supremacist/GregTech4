@@ -32,7 +32,7 @@ public class GT_MetaTileEntity_QuantumChest extends GT_MetaTileEntity_DigitalChe
    }
 
    public int getTextureIndex(byte aSide, byte aFacing, boolean aActive, boolean aRedstone) {
-      return aSide == aFacing?55:(aSide == 0?3:0);
+      return aSide == aFacing?55:(aSide == 0?38:0);
    }
 
    public String getDescription() {
