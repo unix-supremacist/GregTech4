@@ -448,6 +448,7 @@ public class GT_BlockMetaID_Machine extends BlockContainer implements IDebugable
 		mIcons[ 342] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/bronze_side_extractor");
 		mIcons[ 343] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/bronze_side_extractor_active");
 		mIcons[ 346] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/bronze_side_pipe");
+	    mIcons[ 413] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/bronze_side_pipe_alt");
 		mIcons[ 347] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/bronze_side_blastfurnace");
 		mIcons[ 348] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/bronze_side_blastfurnace_active");
 		
@@ -513,7 +514,7 @@ public class GT_BlockMetaID_Machine extends BlockContainer implements IDebugable
 	    mIcons[ 410] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/high_voltage_charger_side");
 	    mIcons[ 411] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/high_voltage_charger_top");
 	    mIcons[ 412] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/high_voltage_charger_top_active");
-		
+
 	    if (GregTech_API.sPostloadFinished) {
 	    	GT_Log.log.info("Setting up Icon Register for Blocks");
 			GregTech_API.sBlockIcons = aIconRegister;

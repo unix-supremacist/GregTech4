@@ -69,6 +69,11 @@ public class GT_MetaTileEntity_BronzeAlloySmelter extends GT_MetaTileEntity_Basi
 	}
 	
 	@Override
+	public int getSideFacingPipe() {
+		return 413;
+	}
+	
+	@Override
 	public String getDescription() {
 		return "metatileentity.GT_BronzeAlloySmelter.tooltip";
 	}

@@ -77,6 +77,11 @@ public class GT_MetaTileEntity_BronzeFurnace extends GT_MetaTileEntity_BasicMach
 	public int getBottomFacingInactive() {
 		return 339;
 	}
+
+	@Override
+	public int getSideFacingPipe() {
+		return 413;
+	}
 	
 	@Override
 	public String getDescription() {
