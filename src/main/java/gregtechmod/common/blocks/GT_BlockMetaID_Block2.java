@@ -39,7 +39,7 @@ public class GT_BlockMetaID_Block2 extends Block {
 	@Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister par1IconRegister) {
-    	for (int i = 0; i < mIcons.length; i++) mIcons[i] = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + (GT_Config.system ? "troll" : getUnlocalizedName() + "/" + i));
+    	for (int i = 0; i < mIcons.length; i++) mIcons[i] = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/" + i);
     	if (GregTech_API.sPostloadFinished) {
         	GregTech_API.registerCover(GT_OreDictUnificator.getOres("plateLead")			, mIcons[ 0]);
         	GregTech_API.registerCover(GT_OreDictUnificator.getOres("plateElectrum")		, mIcons[ 1]);

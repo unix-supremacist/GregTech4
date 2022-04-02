@@ -359,9 +359,9 @@ public abstract class GT_MetaGenerated_Item extends GT_Generic_Item implements I
 		
 		for (short i = 0, j = (short)mEnabledItems.length(); i < j; i++) if (mEnabledItems.get(i)) {
 			for (byte k = 1; k < mIconList[i].length; k++) {
-				mIconList[i][k] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_ITEM + (GT_Config.system?"troll":getUnlocalizedName() + "/" + i + "/" + k));
+				mIconList[i][k] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_ITEM + getUnlocalizedName() + "/" + i + "/" + k);
 			}
-    		mIconList[i][0] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_ITEM + (GT_Config.system?"troll":getUnlocalizedName() + "/" + i));
+    		mIconList[i][0] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_ITEM + getUnlocalizedName() + "/" + i);
     	}
     }
 	

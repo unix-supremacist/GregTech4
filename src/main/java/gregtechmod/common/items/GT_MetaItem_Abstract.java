@@ -39,7 +39,7 @@ public class GT_MetaItem_Abstract extends Item {
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister par1IconRegister) {
     	for (int i = 0; i < MAXIMUM_META_IDS; i++) if (mStackList[i] != null) {
-    		mIconList[i] = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_ITEM + (GT_Config.system ? "troll" : getUnlocalizedName() + "/" + i));
+    		mIconList[i] = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_ITEM + getUnlocalizedName() + "/" + i);
     	}
     }
 	

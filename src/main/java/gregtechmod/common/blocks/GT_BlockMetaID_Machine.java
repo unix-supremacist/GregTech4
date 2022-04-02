@@ -63,7 +63,7 @@ public class GT_BlockMetaID_Machine extends BlockContainer implements IDebugable
 	@Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister aIconRegister) {
-		GregTech_API.FAIL_ICON = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + (GT_Config.system ? "troll" : getUnlocalizedName() + "/failed"));
+		GregTech_API.FAIL_ICON = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/failed");
 		
 		mIcons[   0] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/adv_machine");
 		mIcons[   2] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/adv_machine_logo");
@@ -597,8 +597,8 @@ public class GT_BlockMetaID_Machine extends BlockContainer implements IDebugable
 					GT_Log.log.error("Invalid Texture Index: " + tIndex);
 			}
 		}
-		
-		if (GT_Config.system || rIcon == null) rIcon = GregTech_API.FAIL_ICON;
+
+		if (rIcon == null) rIcon = GregTech_API.FAIL_ICON;
 		return rIcon;
 	}
 	
@@ -621,7 +621,6 @@ public class GT_BlockMetaID_Machine extends BlockContainer implements IDebugable
 		}
 		
 		if (rIcon == null && tIndex >= 0 && tIndex < mIcons.length) rIcon = mIcons[tIndex];
-		if (GT_Config.system || rIcon == null) rIcon = GregTech_API.FAIL_ICON;
 		return rIcon;
 	}
 	

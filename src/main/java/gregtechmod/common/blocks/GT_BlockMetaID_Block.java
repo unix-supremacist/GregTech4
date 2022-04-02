@@ -51,13 +51,13 @@ public class GT_BlockMetaID_Block extends Block {
 	@Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister par1IconRegister) {
-    	for (int i = 0; i < mIcons					.length; i++) mIcons					[i] = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + (GT_Config.system?"troll":getUnlocalizedName() + "/" + i));
-    	for (int i = 0; i < mIconGasTurbine			.length; i++) mIconGasTurbine			[i] = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + (GT_Config.system?"troll":"tile.GasTurbine/GasTurbine" + (i+1)));
-    	for (int i = 0; i < mIconGasTurbineActive	.length; i++) mIconGasTurbineActive		[i] = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + (GT_Config.system?"troll":"tile.GasTurbine/GasTurbineActive" + (i+1)));
-    	for (int i = 0; i < mIconSteamTurbine		.length; i++) mIconSteamTurbine			[i] = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + (GT_Config.system?"troll":"tile.SteamTurbine/SteamTurbine" + (i+1)));
-    	for (int i = 0; i < mIconSteamTurbineActive	.length; i++) mIconSteamTurbineActive	[i] = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + (GT_Config.system?"troll":"tile.SteamTurbine/SteamTurbineActive" + (i+1)));
-    	for (int i = 0; i < mIconPlasmaTurbine		.length; i++) mIconPlasmaTurbine		[i] = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + (GT_Config.system?"troll":"tile.PlasmaTurbine/PlasmaTurbine" + (i+1)));
-    	for (int i = 0; i < mIconPlasmaTurbineActive.length; i++) mIconPlasmaTurbineActive	[i] = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + (GT_Config.system?"troll":"tile.PlasmaTurbine/PlasmaTurbineActive" + (i+1)));
+    	for (int i = 0; i < mIcons					.length; i++) mIcons					[i] = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/" + i);
+    	for (int i = 0; i < mIconGasTurbine			.length; i++) mIconGasTurbine			[i] = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + "tile.GasTurbine/GasTurbine" + (i+1));
+    	for (int i = 0; i < mIconGasTurbineActive	.length; i++) mIconGasTurbineActive		[i] = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + "tile.GasTurbine/GasTurbineActive" + (i+1));
+    	for (int i = 0; i < mIconSteamTurbine		.length; i++) mIconSteamTurbine			[i] = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + "tile.SteamTurbine/SteamTurbine" + (i+1));
+    	for (int i = 0; i < mIconSteamTurbineActive	.length; i++) mIconSteamTurbineActive	[i] = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + "tile.SteamTurbine/SteamTurbineActive" + (i+1));
+    	for (int i = 0; i < mIconPlasmaTurbine		.length; i++) mIconPlasmaTurbine		[i] = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + "tile.PlasmaTurbine/PlasmaTurbine" + (i+1));
+    	for (int i = 0; i < mIconPlasmaTurbineActive.length; i++) mIconPlasmaTurbineActive	[i] = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + "tile.PlasmaTurbine/PlasmaTurbineActive" + (i+1));
     	
     	if(GregTech_API.sPostloadFinished) {
 	    	GregTech_API.registerCover(GT_OreDictUnificator.getOres("plateSilver")			, mIcons[ 3]);

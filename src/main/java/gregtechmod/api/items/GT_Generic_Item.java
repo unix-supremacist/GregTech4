@@ -40,7 +40,7 @@ public class GT_Generic_Item extends Item {
 	@Override
     @SideOnly(Side.CLIENT)
     public void registerIcons(IIconRegister aIconRegister) {
-		mIcon = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_ITEM + (GT_Config.system?"troll":getUnlocalizedName()));
+		mIcon = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_ITEM + getUnlocalizedName());
     }
 	
     public boolean doesSneakBypassUse(World aWorld, int aX, int aY, int aZ) {

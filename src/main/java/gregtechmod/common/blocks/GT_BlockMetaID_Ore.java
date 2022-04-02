@@ -58,12 +58,12 @@ public class GT_BlockMetaID_Ore extends Block {
 	@Override
     @SideOnly(Side.CLIENT)
     public void registerBlockIcons(IIconRegister par1IconRegister) {
-		for (int i = 0; i < 96; i++) mIcons[i]       = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + (GT_Config.system ? "troll" : "tile.Ore_Default"+ "/" + i));
-		for (int i = 0; i < 96; i++) mIconsStone[i]  = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + (GT_Config.system ? "troll" : "tile.Ore_Stone"  + "/" + i));
-		for (int i = 0; i < 96; i++) mIconsNether[i] = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + (GT_Config.system ? "troll" : "tile.Ore_Nether" + "/" + i));
-		for (int i = 0; i < 96; i++) mIconsEnd[i]    = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + (GT_Config.system ? "troll" : "tile.Ore_End"    + "/" + i));
-		for (int i = 0; i < 96; i++) mIconsBlack[i]  = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + (GT_Config.system ? "troll" : "tile.Ore_Black"  + "/" + i));
-		for (int i = 0; i < 96; i++) mIconsRed[i]    = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + (GT_Config.system ? "troll" : "tile.Ore_Red"    + "/" + i));
+		for (int i = 0; i < 96; i++) mIcons[i]       = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + "tile.Ore_Default" + "/" + i);
+		for (int i = 0; i < 96; i++) mIconsStone[i]  = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + "tile.Ore_Stone"  + "/" + i);
+		for (int i = 0; i < 96; i++) mIconsNether[i] = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + "tile.Ore_Nether" + "/" + i);
+		for (int i = 0; i < 96; i++) mIconsEnd[i]    = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + "tile.Ore_End"    + "/" + i);
+		for (int i = 0; i < 96; i++) mIconsBlack[i]  = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + "tile.Ore_Black"  + "/" + i);
+		for (int i = 0; i < 96; i++) mIconsRed[i]    = par1IconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + "tile.Ore_Red"    + "/" + i);
 	}
 	
 	@Override

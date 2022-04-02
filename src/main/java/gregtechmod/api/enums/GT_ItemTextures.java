@@ -14,8 +14,8 @@ public class GT_ItemTextures implements Runnable {
 	@Override
 	public void run() {
 		for (MetaIcons tIcon : MetaIcons.values()) {
-			tIcon.mIcon		= ((IIconRegister)GregTech_API.sItemIcons).registerIcon(GregTech_API.TEXTURE_PATH_ITEM + (GT_Config.system?"troll":"iconsets/" + tIcon));
-			tIcon.mOverlay	= ((IIconRegister)GregTech_API.sItemIcons).registerIcon(GregTech_API.TEXTURE_PATH_ITEM + (GT_Config.system?"troll":"iconsets/" + tIcon + "_OVERLAY"));
+			tIcon.mIcon		= ((IIconRegister)GregTech_API.sItemIcons).registerIcon(GregTech_API.TEXTURE_PATH_ITEM + "iconsets/" + tIcon);
+			tIcon.mOverlay	= ((IIconRegister)GregTech_API.sItemIcons).registerIcon(GregTech_API.TEXTURE_PATH_ITEM + "iconsets/" + tIcon + "_OVERLAY");
 		}
 	}
 	
