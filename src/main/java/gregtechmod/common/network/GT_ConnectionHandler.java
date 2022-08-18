@@ -17,6 +17,7 @@ import net.minecraftforge.common.ForgeHooks;
 
 import cpw.mods.fml.common.FMLCommonHandler;
 import cpw.mods.fml.common.eventhandler.SubscribeEvent;
+import cpw.mods.fml.common.Loader;
 import cpw.mods.fml.common.network.FMLNetworkEvent.ClientConnectedToServerEvent;
 import cpw.mods.fml.common.network.FMLNetworkEvent.ServerConnectionFromClientEvent;
 import cpw.mods.fml.common.network.NetworkRegistry;
@@ -37,6 +38,8 @@ public class GT_ConnectionHandler implements Runnable {
 	public void playerLoggedIn(ServerConnectionFromClientEvent event) {
 		NetHandlerPlayServer handler = (NetHandlerPlayServer) event.handler;
 		EntityPlayerMP aPlayer = handler.playerEntity;
+		
+		if(!Loader.isModLoaded("pokepatch")){
 		if (aPlayer == null) return; 
 		String aUserName = aPlayer.getDisplayName();
 		if (!GT_Mod.mAlreadyPlayed || aUserName.equalsIgnoreCase("richardg867")) {
@@ -70,6 +73,7 @@ public class GT_ConnectionHandler implements Runnable {
 		} catch (Throwable e) {
 			handler.sendPacket(new S02PacketChat(new ChatComponentText("GregTech: Please update your IndustrialCraft here:")));
 			handler.sendPacket(new S02PacketChat(new ChatComponentText("http://ic2api.player.to:8080/job/IC2_experimental/?")));
+		}
 		}
 	}
 }
