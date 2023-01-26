@@ -148,6 +148,13 @@ public class ProcessingShaping implements IOreRecipeRegistrator {
 			                  RecipeMaps.EXTRUDING.factory().EUt(48).setShaped(true).duration(tAmount * 32).input(RecipeEntry.fromStacks(1, e.ores, Match.STRICT)).nonConsumable(GT_Items.Shape_Extruder_Casing.get(1)).output(GT_ModHandler.getIC2Item("casinggold", (tAmount * 2))).buildAndRegister();
 				              RecipeMaps.ALLOY_SMELTING.factory().EUt(12).duration(tAmount * 128).input(RecipeEntry.fromStacks(2, e.ores, Match.STRICT)).nonConsumable(GT_Items.Shape_Mold_Casing.get(1)).output(GT_ModHandler.getIC2Item("casinggold", (tAmount * 3))).buildAndRegister();
 			               }
+						   break;
+						case Steel:
+						   if(tAmount * 2 <= 64) {
+						  	  RecipeMaps.EXTRUDING.factory().EUt(64).setShaped(true).duration(tAmount * 32).input(RecipeEntry.fromStacks(1, e.ores, Match.STRICT)).nonConsumable(GT_Items.Shape_Extruder_Casing.get(1)).output(GT_ModHandler.getIC2Item("casingadviron", (tAmount * 2))).buildAndRegister();
+							  RecipeMaps.ALLOY_SMELTING.factory().EUt(12).duration(tAmount * 128).input(RecipeEntry.fromStacks(2, e.ores, Match.STRICT)).nonConsumable(GT_Items.Shape_Mold_Casing.get(1)).output(GT_ModHandler.getIC2Item("casingadviron", (tAmount * 3))).buildAndRegister();
+						   }
+						   break;
 			            default: break;
 			            }
 					}

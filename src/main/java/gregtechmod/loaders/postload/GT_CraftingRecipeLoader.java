@@ -288,8 +288,9 @@ public class GT_CraftingRecipeLoader implements Runnable {
 	    GT_ModHandler.addCraftingRecipe(GT_ModHandler.getIC2Item("casingcopper"	, 1), new Object[] {"H P", 'P', OrePrefixes.plate.get(Materials.Copper), 'H', GT_ToolDictNames.craftingToolHardHammer});
 	    GT_ModHandler.addCraftingRecipe(GT_ModHandler.getIC2Item("casingtin"	, 1), new Object[] {"H P", 'P', OrePrefixes.plate.get(Materials.Tin), 'H', GT_ToolDictNames.craftingToolHardHammer});
 	    GT_ModHandler.addCraftingRecipe(GT_ModHandler.getIC2Item("casinglead"	, 1), new Object[] {"H P", 'P', OrePrefixes.plate.get(Materials.Lead), 'H', GT_ToolDictNames.craftingToolHardHammer});
-		
-	    GT_ModHandler.addCraftingRecipe(GT_Items.Component_Turbine_Bronze		.getUndamaged(1), new Object[] {"TTT", "TBT", "TTT", 'T', GT_OreDictNames.craftingTurbineBladeBronze, 'B', OrePrefixes.gearGt.get(Materials.Bronze)});
+		GT_ModHandler.addCraftingRecipe(GT_ModHandler.getIC2Item("casingadviron"	, 1), new Object[] {"H P", 'P', OrePrefixes.plate.get(Materials.Steel), 'H', GT_ToolDictNames.craftingToolHardHammer});
+
+		GT_ModHandler.addCraftingRecipe(GT_Items.Component_Turbine_Bronze		.getUndamaged(1), new Object[] {"TTT", "TBT", "TTT", 'T', GT_OreDictNames.craftingTurbineBladeBronze, 'B', OrePrefixes.gearGt.get(Materials.Bronze)});
 	    GT_ModHandler.addCraftingRecipe(GT_Items.Component_Turbine_Steel		.getUndamaged(1), new Object[] {"TTT", "TBT", "TTT", 'T', GT_OreDictNames.craftingTurbineBladeSteel, 'B', OrePrefixes.gearGt.get(Materials.Steel)});
 	    GT_ModHandler.addCraftingRecipe(GT_Items.Component_Turbine_Magnalium	.getUndamaged(1), new Object[] {"TTT", "TBT", "TTT", 'T', GT_OreDictNames.craftingTurbineBladeMagnalium, 'B', OrePrefixes.gearGt.get(Materials.Magnalium)});
 	    GT_ModHandler.addCraftingRecipe(GT_Items.Component_Turbine_TungstenSteel.getUndamaged(1), new Object[] {"TTT", "TBT", "TTT", 'T', GT_OreDictNames.craftingTurbineBladeTungstenSteel, 'B', OrePrefixes.gearGt.get(Materials.TungstenSteel)});

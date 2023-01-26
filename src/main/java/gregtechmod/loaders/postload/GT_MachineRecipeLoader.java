@@ -307,7 +307,8 @@ public class GT_MachineRecipeLoader implements Runnable
         RecipeMaps.CUTTING.factory().EUt(16).duration(100).input(OrePrefixes.plate, Materials.Lead, 1).output(GT_ModHandler.getIC2Item("casinglead", 2L)).buildAndRegister();
         RecipeMaps.CUTTING.factory().EUt(16).duration(100).input(OrePrefixes.plate, Materials.Cupronickel, 1).output(GT_Items.Credit_Greg_Cupronickel.get(4L)).buildAndRegister();
         RecipeMaps.CUTTING.factory().EUt(16).duration(100).input(OrePrefixes.plate, Materials.Brass, 1).output(GT_Items.Coin_Doge.get(4L)).buildAndRegister();
-        
+        RecipeMaps.CUTTING.factory().EUt(16).duration(100).input(OrePrefixes.plate, Materials.Steel, 1).output(GT_ModHandler.getIC2Item("casingadviron", 2L)).buildAndRegister();
+
         RecipeMaps.WIREMILL.factory().EUt(2).duration(100).input(OrePrefixes.ingot, Materials.Copper).output(GT_ModHandler.getIC2Item("copperCableItem", 3L)).buildAndRegister();
         RecipeMaps.WIREMILL.factory().EUt(1).duration(150).input(OrePrefixes.ingot, Materials.Tin).output(GT_ModHandler.getIC2Item("tinCableItem", 4L)).buildAndRegister();
         RecipeMaps.WIREMILL.factory().EUt(4).duration(100).input(OrePrefixes.ingot, Materials.SolderingAlloy).output(GT_Items.Tool_SolderingMaterial_Tin.get(1L)).buildAndRegister();
