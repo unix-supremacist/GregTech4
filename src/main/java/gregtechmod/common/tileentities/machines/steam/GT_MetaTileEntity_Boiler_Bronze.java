@@ -127,15 +127,15 @@ public class GT_MetaTileEntity_Boiler_Bronze extends GT_MetaTileEntity_BasicTank
 	    				}
 	    				mFluid[0].amount--;
 		    			if (mSteam == null) {
-		    				FluidStack steam = GT_ModHandler.getSteam(150);
-		    				if (steam == null) steam = GT_ModHandler.getIC2Steam(150); 
+		    				FluidStack steam = GT_ModHandler.getIC2Steam(150);
+		    				if (steam == null) steam = GT_ModHandler.getSteam(150);
 		    				mSteam = steam;
 		    			} else {
 		    				if (GT_ModHandler.isSteam(mSteam)) {
 		    					mSteam.amount+=150;
 		    				} else {
-		    					FluidStack steam = GT_ModHandler.getSteam(150);
-			    				if (steam == null) steam = GT_ModHandler.getIC2Steam(150); 
+		    					FluidStack steam = GT_ModHandler.getIC2Steam(150);
+			    				if (steam == null) steam = GT_ModHandler.getSteam(150);
 			    				mSteam = steam;
 		    				}
 		    			}
