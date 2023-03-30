@@ -162,17 +162,17 @@ public class GT_MachineRecipeLoader implements Runnable
         RecipeMaps.CANNING.factory().EUt(8).duration(100).inputs(GT_Items.IC2_Fuel_Rod_Empty.get(1), GT_ModHandler.getIC2Item("UranFuel", 1)).output(GT_ModHandler.getIC2Item("reactorUraniumSimple", 1, 1)).buildAndRegister();
         RecipeMaps.CANNING.factory().EUt(8).duration(100).inputs(GT_Items.IC2_Fuel_Rod_Empty.get(1), GT_ModHandler.getIC2Item("MOXFuel", 1)).output(GT_ModHandler.getIC2Item("reactorMOXSimple", 1, 1)).buildAndRegister();
         
-        ItemStack constCell = GT_Utility.fillFluidContainer(GT_Utility.copy(Materials.ConstructionFoam.mFluid, 1000), GT_Items.Cell_Empty.get(1));
-        RecipeEntry entry = RecipeEntry.fromStacks(10, Lists.newArrayList(
+        //ItemStack constCell = GT_Utility.fillFluidContainer(GT_Utility.copy(Materials.ConstructionFoam.mFluid, 1000), GT_Items.Cell_Empty.get(1));
+        /*RecipeEntry entry = RecipeEntry.fromStacks(10, Lists.newArrayList(
         		GT_ModHandler.getIC2Item("ironScaffold", 1),
         		GT_Items.Frame_Aluminium.get(1),
         		GT_Items.Frame_Iron.get(1),
         		GT_Items.Frame_StainlessSteel.get(1),
         		GT_Items.Frame_Steel.get(1),
-        		GT_Items.Frame_TungstenSteel.get(1)));
+        		GT_Items.Frame_TungstenSteel.get(1)));*/
         
-        RecipeMaps.CANNING.factory().EUt(4).duration(200).input(GT_Items.Cell_Water.get(1)).input(GT_ModHandler.getIC2Item("constructionFoamPowder", 1)).output(constCell).buildAndRegister();
-        RecipeMaps.CANNING.factory().EUt(8).duration(100).input(constCell).input(entry).outputs(GT_ModHandler.getIC2Item("reinforcedStone", 10), GT_Items.Cell_Empty.get(1)).buildAndRegister();
+        //RecipeMaps.CANNING.factory().EUt(4).duration(200).input(GT_Items.Cell_Water.get(1)).input(GT_ModHandler.getIC2Item("constructionFoamPowder", 1)).output(constCell).buildAndRegister();
+        //RecipeMaps.CANNING.factory().EUt(8).duration(100).input(constCell).input(entry).outputs(GT_ModHandler.getIC2Item("reinforcedStone", 10), GT_Items.Cell_Empty.get(1)).buildAndRegister();
         
         RecipeMaps.FUSION_REACTOR.factory().EUt(4096).startEU(40000000).duration(128).inputs(GT_Utility.copy(Materials.Deuterium.mGas, 1000), GT_Utility.copy(Materials.Tritium.mGas, 1000)).output(GT_Utility.copy(Materials.Helium.mPlasma, 1000)).buildAndRegister();
         RecipeMaps.FUSION_REACTOR.factory().EUt(2048).startEU(60000000).duration(128).inputs(GT_Utility.copy(Materials.Deuterium.mGas, 1000), GT_Utility.copy(Materials.Helium_3.mGas, 1000)).output(GT_Utility.copy(Materials.Helium.mPlasma, 1000)).buildAndRegister();

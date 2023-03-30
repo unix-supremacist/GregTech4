@@ -691,32 +691,6 @@ public class GT_ModHandler {
 	}
 	
 	/**
-	 * IC2-ThermalCentrifuge Recipe. Overloads old Recipes automatically
-	 */
-	public static boolean addThermalCentrifugeRecipe(ItemStack aInput, int aHeat, Object... aOutput) {
-		if (aInput == null || aOutput == null) return false;
-		GT_Utility.removeSimpleIC2MachineRecipe(aInput, getThermalCentrifugeRecipeList(), null);
-		if (!GregTech_API.sRecipeFile.get(GT_ConfigCategories.Machines.thermalcentrifuge, aInput, true)) return false;
-		NBTTagCompound tNBT = new NBTTagCompound();
-		tNBT.setInteger("minHeat", aHeat);
-		GT_Utility.addSimpleIC2MachineRecipe(aInput, getThermalCentrifugeRecipeList(), tNBT, aOutput);
-		return true;
-	}
-	
-	/**
-	 * IC2-OreWasher Recipe. Overloads old Recipes automatically
-	 */
-	public static boolean addOreWasherRecipe(ItemStack aInput, int aWaterAmount, Object... aOutput) {
-		if (aInput == null || aOutput == null) return false;
-		GT_Utility.removeSimpleIC2MachineRecipe(aInput, getOreWashingRecipeList(), null);
-		if (!GregTech_API.sRecipeFile.get(GT_ConfigCategories.Machines.orewashing, aInput, true)) return false;
-		NBTTagCompound tNBT = new NBTTagCompound();
-		tNBT.setInteger("amount", aWaterAmount);
-		GT_Utility.addSimpleIC2MachineRecipe(aInput, getOreWashingRecipeList(), tNBT, aOutput);
-		return true;
-	}
-	
-	/**
 	 * IC2-Compressor Recipe. Overloads old Recipes automatically
 	 */
 	public static boolean addCompressionRecipe(ItemStack aInput, ItemStack aOutput) {
