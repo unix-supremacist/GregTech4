@@ -57,14 +57,14 @@ public class GT_DictRegistratorPreItem implements Runnable {
     	GT_OreDictUnificator.add("plateAlloyAdvanced"		, GT_ModHandler.getIC2Item("advancedAlloy", 1));
     	GT_OreDictUnificator.add("plateAlloyCarbon"			, GT_ModHandler.getIC2Item("carbonPlate", 1));
     	GT_OreDictUnificator.add("plateDenseCopper"			, GT_ModHandler.getIC2Item("denseplatecopper", 1));
-    	//GT_OreDictUnificator.add("plateDenseTin"			, GT_ModHandler.getIC2Item("denseplatetin", 1));
-    	//GT_OreDictUnificator.add("plateDenseBronze"			, GT_ModHandler.getIC2Item("denseplatebronze", 1));
-    	//GT_OreDictUnificator.add("plateDenseGold"			, GT_ModHandler.getIC2Item("denseplategold", 1));
-    	//GT_OreDictUnificator.add("plateDenseIron"			, GT_ModHandler.getIC2Item("denseplateiron", 1));
-    	//GT_OreDictUnificator.add("plateDenseRefinedIron"	, GT_ModHandler.getIC2Item("denseplateadviron", 1));
-    	//GT_OreDictUnificator.add("plateDenseLead"			, GT_ModHandler.getIC2Item("denseplatelead", 1));
-    	//GT_OreDictUnificator.add("plateDenseLapis"			, GT_ModHandler.getIC2Item("denseplatelapi", 1));
-    	//GT_OreDictUnificator.add("plateDenseObsidian"		, GT_ModHandler.getIC2Item("denseplateobsidian", 1));
+    	GT_OreDictUnificator.add("plateDenseTin"			, GT_ModHandler.getIC2Item("denseplatetin", 1));
+    	GT_OreDictUnificator.add("plateDenseBronze"			, GT_ModHandler.getIC2Item("denseplatebronze", 1));
+    	GT_OreDictUnificator.add("plateDenseGold"			, GT_ModHandler.getIC2Item("denseplategold", 1));
+    	GT_OreDictUnificator.add("plateDenseIron"			, GT_ModHandler.getIC2Item("denseplateiron", 1));
+    	GT_OreDictUnificator.add("plateDenseRefinedIron"	, GT_ModHandler.getIC2Item("denseplateadviron", 1));
+    	GT_OreDictUnificator.add("plateDenseLead"			, GT_ModHandler.getIC2Item("denseplatelead", 1));
+    	GT_OreDictUnificator.add("plateDenseLapis"			, GT_ModHandler.getIC2Item("denseplatelapi", 1));
+    	GT_OreDictUnificator.add("plateDenseObsidian"		, GT_ModHandler.getIC2Item("denseplateobsidian", 1));
     	
     	GT_OreDictUnificator.registerOre("itemRecord" , new ItemStack(Items.record_13, 1));
     	GT_OreDictUnificator.registerOre("itemRecord" , new ItemStack(Items.record_cat, 1));

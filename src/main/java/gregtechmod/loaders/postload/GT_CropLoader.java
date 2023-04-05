@@ -45,11 +45,11 @@ public class GT_CropLoader implements Runnable {
 	        GT_Log.log.info("Changing default IC2 crop loot");
 	        Map<CropCard, ItemStack> crops = new HashMap<>();
 	        
-	        //crops.put(ic2.core.crop.IC2Crops.cropPlumbiscus	, GT_Items.Crop_Drop_Plumbilia	.get(1));
-	        //crops.put(ic2.core.crop.IC2Crops.cropShining	, GT_Items.Crop_Drop_Argentia	.get(1));
-	        crops.put(ic2.core.block.crop.IC2Crops.cropFerru		, GT_Items.Crop_Drop_Ferru		.get(1));
-	        crops.put(ic2.core.block.crop.IC2Crops.cropAurelia	, GT_Items.Crop_Drop_Aurelia	.get(1));
-	        //crops.put(ic2.core.crop.IC2Crops.cropCyprium	, GT_Items.Crop_Drop_Coppon		.get(1));
+	        crops.put(ic2.core.crop.IC2Crops.cropPlumbiscus	, GT_Items.Crop_Drop_Plumbilia	.get(1));
+	        crops.put(ic2.core.crop.IC2Crops.cropShining	, GT_Items.Crop_Drop_Argentia	.get(1));
+	        crops.put(ic2.core.crop.IC2Crops.cropFerru		, GT_Items.Crop_Drop_Ferru		.get(1));
+	        crops.put(ic2.core.crop.IC2Crops.cropAurelia	, GT_Items.Crop_Drop_Aurelia	.get(1));
+	        crops.put(ic2.core.crop.IC2Crops.cropCyprium	, GT_Items.Crop_Drop_Coppon		.get(1));
 	         
 	        for (Entry<CropCard, ItemStack> entry : crops.entrySet()) {
 	        	try {

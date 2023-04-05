@@ -824,6 +824,7 @@ public class GT_Mod implements IGT_Mod {
 	    	GregTech_API.registerCover(GT_OreDictUnificator.getOres("plateInvar")			, "");
 	    	GregTech_API.registerCover(GT_OreDictUnificator.getOres("plateOsmium")			, "");
 	    	GregTech_API.registerCover(GT_OreDictUnificator.getOres("plateIridium")			, "");
+	    	GregTech_API.registerCover(GT_OreDictUnificator.getOres("plateDenseBronze")		, "");
 	    	GregTech_API.registerCover(GT_OreDictUnificator.getOres("plateGarnetYellow")	, "");
 	    	GregTech_API.registerCover(GT_OreDictUnificator.getOres("plateGarnetRed")		, "");
 			GregTech_API.registerCover(GT_OreDictUnificator.getOres("plateCooperite")		, "");

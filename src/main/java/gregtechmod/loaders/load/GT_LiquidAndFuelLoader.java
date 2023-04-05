@@ -77,7 +77,7 @@ public class GT_LiquidAndFuelLoader implements Runnable {
 		
         GT_Log.log.info("Initializing various Fuels.");
         RecipeMaps.HOT_FUELS.factory().EUt(20).duration(1000).input(new FluidStack(FluidRegistry.LAVA, 1000)).buildAndRegister();
-        //RecipeMaps.HOT_FUELS.factory().EUt(20).duration(1000).input(FluidRegistry.getFluidStack("ic2hotcoolant", 1000)).input(GT_Items.Cell_Empty.get(1)).output(GT_ModHandler.getIC2Item("coolantCell", 1)).buildAndRegister(); // TODO change thermal generator UI for output fluid slot
+        RecipeMaps.HOT_FUELS.factory().EUt(20).duration(1000).input(FluidRegistry.getFluidStack("ic2hotcoolant", 1000)).input(GT_Items.Cell_Empty.get(1)).output(GT_ModHandler.getIC2Item("coolantCell", 1)).buildAndRegister(); // TODO change thermal generator UI for output fluid slot
         RecipeMaps.MAGIC_FUELS.factory().EUt(20).duration(500).input(new ItemStack(Items.experience_bottle, 1)).buildAndRegister();
         RecipeMaps.MAGIC_FUELS.factory().EUt(24).duration(3125).input(new ItemStack(Items.ghast_tear, 1)).buildAndRegister();
         RecipeMaps.MAGIC_FUELS.factory().EUt(20).duration(Materials.NetherStar.mFuelPower * 2 / 20).input(new ItemStack(Blocks.beacon, 1)).buildAndRegister();

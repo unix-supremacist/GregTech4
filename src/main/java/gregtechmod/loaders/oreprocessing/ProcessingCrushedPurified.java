@@ -10,7 +10,6 @@ import gregtechmod.api.util.GT_ModHandler;
 import gregtechmod.api.util.GT_OreDictUnificator;
 import gregtechmod.api.util.GT_Utility;
 import gregtechmod.api.util.OreDictEntry;
-import gregtechmod.common.recipe.RecipeMaps;
 import net.minecraft.item.ItemStack;
 
 public class ProcessingCrushedPurified implements IOreRecipeRegistrator {
@@ -27,11 +26,7 @@ public class ProcessingCrushedPurified implements IOreRecipeRegistrator {
 					GT_ModHandler.addPulverisationRecipe(GT_Utility.copyAmount(1L, aStack),
 					GT_OreDictUnificator.get(OrePrefixes.dustPure, aMaterial, GT_OreDictUnificator.get(OrePrefixes.dust, aMaterial, 1L), 1L), GT_OreDictUnificator.get(OrePrefixes.dust, GT_Utility.selectItemInList(1, aMaterial, aMaterial.mOreByProducts), 1L), 10, false);
 					if (!aMaterial.contains(SubTag.NO_SMELTING)) {
-						RecipeMaps.CENTRIFUGE.factory().EUt(5)
-								.duration(Math.max(1, aMaterial.getMass() * 16))
-								.input(GT_Utility.copyAmount(1L, aStack))
-								.outputs(GT_OreDictUnificator.get(OrePrefixes.crushedCentrifuged, aMaterial, 1L), GT_OreDictUnificator.get(OrePrefixes.dustTiny, GT_Utility.selectItemInList(1, aMaterial, aMaterial.mOreByProducts), 1L))
-								.buildAndRegister();
+						GT_ModHandler.addThermalCentrifugeRecipe(GT_Utility.copyAmount(1L, aStack), Math.min(5000, Math.abs(aMaterial.getMass() * 20)), new Object[] { GT_OreDictUnificator.get(OrePrefixes.crushedCentrifuged, aMaterial, 1L), GT_OreDictUnificator.get(OrePrefixes.dustTiny, GT_Utility.selectItemInList(1, aMaterial, aMaterial.mOreByProducts), 1L) });
 					}
 				}
 			}

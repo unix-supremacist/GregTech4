@@ -91,7 +91,6 @@ public class SimpleRecipeFactory extends RecipeFactory<SimpleRecipeFactory> {
 			Recipe recipe = new Recipe(startEU, EUt, duration, shaped, inputItems, outputItems, chancedOutput, inputFluids, outputFluids, Collections.emptyMap());
 			reset();
 			return recipe;
-		}// throw new GT_RecipeException(errors.toString());
-		return null;
+		} throw new GT_RecipeException(errors.toString());
 	}
 }
