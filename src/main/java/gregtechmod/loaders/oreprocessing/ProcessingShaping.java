@@ -28,7 +28,7 @@ public class ProcessingShaping implements IOreRecipeRegistrator {
 		Materials.TungstenSteel,
 		Materials.Brass,
 		Materials.Electrum,
-		Materials.Cooperite
+		Materials.Platinum
 	});
 	
 	public final static List<Materials> PIPES_SMALL = Arrays.asList(new Materials[]{

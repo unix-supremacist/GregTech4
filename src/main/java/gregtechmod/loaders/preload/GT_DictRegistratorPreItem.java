@@ -183,7 +183,7 @@ public class GT_DictRegistratorPreItem implements Runnable {
         GT_OreDictUnificator.add(OrePrefixes.block	, Materials.Zinc			, new ItemStack(GregTech_API.sBlockList[4], 1, 2));
         GT_OreDictUnificator.add(OrePrefixes.block	, Materials.Olivine			, new ItemStack(GregTech_API.sBlockList[4], 1, 3));
         GT_OreDictUnificator.add(OrePrefixes.block	, Materials.GreenSapphire	, new ItemStack(GregTech_API.sBlockList[4], 1, 4));
-        GT_OreDictUnificator.add(OrePrefixes.block	, Materials.Cooperite		, new ItemStack(GregTech_API.sBlockList[4], 1, 5));
+        GT_OreDictUnificator.add(OrePrefixes.block	, Materials.Platinum		, new ItemStack(GregTech_API.sBlockList[4], 1, 5));
         GT_OreDictUnificator.add(OrePrefixes.block	, Materials.Tungsten		, new ItemStack(GregTech_API.sBlockList[4], 1, 6));
         GT_OreDictUnificator.add(OrePrefixes.block	, Materials.Nickel			, new ItemStack(GregTech_API.sBlockList[4], 1, 7));
         GT_OreDictUnificator.add(OrePrefixes.block	, Materials.Invar			, new ItemStack(GregTech_API.sBlockList[4], 1,10));

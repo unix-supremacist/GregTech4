@@ -83,7 +83,7 @@ public class GT_ScrapboxDropLoader implements Runnable {
 		GT_ModHandler.addScrapboxDrop(2.00F, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Sodalite));
 		GT_ModHandler.addScrapboxDrop(4.00F, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Netherrack));
 		GT_ModHandler.addScrapboxDrop(4.00F, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Flint));
-		GT_ModHandler.addScrapboxDrop(0.03F, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Cooperite));
+		GT_ModHandler.addScrapboxDrop(0.03F, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Platinum));
 		GT_ModHandler.addScrapboxDrop(0.03F, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Tungsten));
 		GT_ModHandler.addScrapboxDrop(0.03F, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Chrome));
 		GT_ModHandler.addScrapboxDrop(0.03F, GT_OreDictUnificator.get(OrePrefixes.dust, Materials.Titanium));

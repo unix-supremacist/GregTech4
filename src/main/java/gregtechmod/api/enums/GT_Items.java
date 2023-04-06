@@ -62,13 +62,13 @@ public enum GT_Items implements IItemContainer {
 	Credit_Iron,
 	Credit_Silver,
 	Credit_Gold,
-	Credit_Cooperite,
+	Credit_Platinum,
 	Credit_Osmium,
 	Credit_Greg_Copper,
 	Credit_Greg_Cupronickel,
 	Credit_Greg_Silver,
 	Credit_Greg_Gold,
-	Credit_Greg_Cooperite,
+	Credit_Greg_Platinum,
 	Credit_Greg_Osmium,
 	Credit_Greg_Naquadah,
 	Credit_Greg_Neutronium,
@@ -267,8 +267,8 @@ public enum GT_Items implements IItemContainer {
 	Pipe_Brass_Large,
 	Pipe_Electrum_Medium,
 	Pipe_Electrum_Large,
-	Pipe_Cooperite_Medium,
-	Pipe_Cooperite_Large,
+	Pipe_Platinum_Medium,
+	Pipe_Platinum_Large,
 	
 	NULL;
 	

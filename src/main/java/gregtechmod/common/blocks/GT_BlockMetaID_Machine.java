@@ -497,9 +497,9 @@ public class GT_BlockMetaID_Machine extends BlockContainer implements IDebugable
 		mIcons[ 381] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/pipe_tungstensteel");
 		mIcons[ 382] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/pipe_tungstensteel_connected");
 		mIcons[ 383] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/pipe_tungstensteel_connected_large");
-		mIcons[ 384] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/pipe_cooperite");
-	    mIcons[ 385] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/pipe_cooperite_connected");
-	    mIcons[ 386] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/pipe_cooperite_connected_large");
+		mIcons[ 384] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/pipe_platinum");
+	    mIcons[ 385] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/pipe_platinum_connected");
+	    mIcons[ 386] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/pipe_platinum_connected_large");
 	    mIcons[ 401] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/pipe_bronze_connected_small");
 	    mIcons[ 402] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/pipe_steel_connected_small");
 	    mIcons[ 403] = aIconRegister.registerIcon(GregTech_API.TEXTURE_PATH_BLOCK + getUnlocalizedName() + "/pipe_stainlesssteel_connected_small");
